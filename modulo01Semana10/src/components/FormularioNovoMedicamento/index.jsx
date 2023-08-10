@@ -6,6 +6,8 @@ function FormularioNovoMedicamento() {
 
     const handleSubmit = (e) => {
         e.preventDefault();
+
+        
         
         }
 
