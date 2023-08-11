@@ -7,7 +7,7 @@ export const MedicamentosContextProvider = ({children}) => {
     const [listaMedicamentos, setListaMedicamentos] = useState([])
 
     const AdicionarMedicamento = (nome, laboratorio, preco) =>{
-        if(nome.length === "" || laboratorio.length === "" || preco.length === 0){
+        if(nome.length === "" || laboratorio.length === "" || preco === 0){
             alert("Preencha todos os campos")
             return
         }
@@ -24,6 +24,8 @@ export const MedicamentosContextProvider = ({children}) => {
     setListaMedicamentos(novaLista)
     alert("Medicamento adicionado com sucesso")
 
+}
+
     const FavoritarMedicamento = (id) => {
     }
 
@@ -32,5 +34,4 @@ export const MedicamentosContextProvider = ({children}) => {
             {children}
         </MedicamentosContext.Provider >
      )
-}
 }
