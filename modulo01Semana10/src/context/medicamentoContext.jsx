@@ -24,8 +24,11 @@ export const MedicamentosContextProvider = ({children}) => {
     setListaMedicamentos(novaLista)
     alert("Medicamento adicionado com sucesso")
 
+    const FavoritarMedicamento = (id) => {
+    }
+
     return (
-        <MedicamentosContext.Provider value={{listaMedicamentos, AdicionarMedicamento}}>
+        <MedicamentosContext.Provider value={{listaMedicamentos, AdicionarMedicamento, FavoritarMedicamento}}>
             {children}
         </MedicamentosContext.Provider >
      )
