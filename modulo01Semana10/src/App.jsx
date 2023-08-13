@@ -12,9 +12,7 @@ function App() {
   
   return (
     <>
-  <Header />
-      <FormularioNovoMedicamento />
-      {listaMedicamentos.map(medicamento => (<CardMedicamento key={medicamento.id} medicamento={{nome: 'Dorflex', laboratorio: 'Sanofi', preco:'7,65', favorito:false, id:1}}/>))}
+  <h1>camila</h1>
        
     
     </>
